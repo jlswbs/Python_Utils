@@ -11,7 +11,7 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 wav_file = sys.argv[1]
-table_size = int(sys.argv[2]) if len(sys.argv) > 2 else 8192
+table_size = int(sys.argv[2]) if len(sys.argv) > 2 else 1024
 
 # načtení wav
 data, samplerate = sf.read(wav_file)
